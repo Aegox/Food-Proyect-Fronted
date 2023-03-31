@@ -55,6 +55,8 @@ const Session = () => {
                 <button onClick={(e) => handleSubmit(e)}>login</button>
                 {error ? <label>email or password are incorret</label>: false}
                 <Link to='/register'>Don't have an account? - Register now</Link>
+                
+                <Link to='/home'>Cancel Loggin? - Back to Home</Link>
             </form>
         </div>
     )

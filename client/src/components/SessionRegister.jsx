@@ -96,7 +96,9 @@ const validateEmail = () => {
                 <input name='repeatPassword' type='password' onChange={(e) => handleSetInputs(e)} placeholder='write your password'/>
                 {errors.validPassword ? <label>must be equal to password</label>: false}
                 <button onClick={(e) => handleCreateUser(e)}>Register</button>
-                <Link to='/register'>you have an account? - Login now</Link>
+                <Link to='/session'>you have an account? - Login now</Link>
+                <Link to='/home'>Cancel register? - Back to Home</Link>
+
             </form>
         </div>
     )
