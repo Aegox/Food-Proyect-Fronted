@@ -20,7 +20,7 @@ export default function App() {
                 <Route path="/session" element={<Session/>}/>
                 <Route path="/register" element={<SessionRegister/>}/>
                 <Route path="/saved" element={<SavedRecipes/>}/>
-            <Routes>
+            </Routes>
         </BrowserRouter>
             )
 }
