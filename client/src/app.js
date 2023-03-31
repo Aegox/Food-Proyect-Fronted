@@ -10,7 +10,8 @@ import SavedRecipes from "./components/SavedRecipes.jsx";
 
 export default function App() {
     return (
-        <Switch>
+        <BrowserRouter>
+            <Routes>
                 <Route path="/" element={<Welcome/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/CreateRecipe" element={<CreateRecipe/>}/>
@@ -19,7 +20,8 @@ export default function App() {
                 <Route path="/session" element={<Session/>}/>
                 <Route path="/register" element={<SessionRegister/>}/>
                 <Route path="/saved" element={<SavedRecipes/>}/>
-        </Switch>
+            <Routes>
+        </BrowserRouter>
             )
 }
 
