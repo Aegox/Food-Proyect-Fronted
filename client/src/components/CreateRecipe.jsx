@@ -122,6 +122,7 @@ const CreateRecipe = () => {
             button: "Ok!",
         });
         navigate("/home")
+        window.location.reload();
     }
     
     useEffect(() => {

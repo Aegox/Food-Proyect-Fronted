@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, useParams} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useParams, Switch} from "react-router-dom";
 import Welcome from "./components/Welcome.jsx";
 import Home from "./components/Home.jsx";
 import CreateRecipe from "./components/CreateRecipe.jsx";
@@ -10,8 +10,7 @@ import SavedRecipes from "./components/SavedRecipes.jsx";
 
 export default function App() {
     return (
-        <BrowserRouter>
-            <Routes>
+        <Switch>
                 <Route path="/" element={<Welcome/>}/>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/CreateRecipe" element={<CreateRecipe/>}/>
@@ -20,9 +19,8 @@ export default function App() {
                 <Route path="/session" element={<Session/>}/>
                 <Route path="/register" element={<SessionRegister/>}/>
                 <Route path="/saved" element={<SavedRecipes/>}/>
-            </Routes>
-        </BrowserRouter>
-    )
+        </Switch>
+            )
 }
 
 
