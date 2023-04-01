@@ -23,7 +23,7 @@ const SavedRecipes = () => {
                 </Link>
                 <h1>SAVED RECIPES</h1>
             </div>
-            <Recipes recipes={recipes}/>
+            {recipes ? <Recipes recipes={recipes}/> : <h1 className={styleRecipeDetail.savedtext}>there is not saved recipes </h1>}
         </div>
     )
 };

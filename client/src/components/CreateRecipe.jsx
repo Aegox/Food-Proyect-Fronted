@@ -121,8 +121,10 @@ const CreateRecipe = () => {
             icon: "success",
             button: "Ok!",
         });
-        navigate("/home")
-        window.location.reload();
+        navigate("/home");
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000)
     }
     
     useEffect(() => {
