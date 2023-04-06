@@ -9,7 +9,6 @@ const SavedRecipes = () => {
     const recipes = useSelector((store) => store.savedRecipes);    
     const dispatch = useDispatch();
     const token = localStorage.getItem('token');
-    console.log(recipes)
 
     useEffect(() => {
         dispatch(actions.getSavedRecipes(token))
@@ -21,7 +20,6 @@ const SavedRecipes = () => {
                 <Link to="/home">
                     <h2>{"<"}</h2><h4>Back to Home</h4>
                 </Link>
-                <h1>SAVED RECIPES</h1>
             </div>
             {recipes ? <Recipes recipes={recipes}/> : <h1 className={styleRecipeDetail.savedtext}>there is not saved recipes </h1>}
         </div>

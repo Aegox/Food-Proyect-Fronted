@@ -40,7 +40,6 @@
 
 }
 
-
 .containerbutton {
     background-color: white;
     color: #1d8845;
@@ -84,6 +83,7 @@
     display: flex;
     align-items: center;
 }
+        
 
 .filter {
     display: flex;
@@ -137,6 +137,7 @@
 
 
 .userOptions a {
+    padding-right: 15px;
     text-decoration: none;
     color: white
 }
@@ -152,18 +153,24 @@
 
 @media screen and (max-width: 1300px) {
     .container {
+        height: 60px;
         width: 100%;
-        justify-content: center;
-        gap: 65%;
+        justify-content: space-around;
 
     }
      .orderContainer {
-        flex-direction: column;
-        height: 100%;
         width: 100%;
-        justify-content: none;
         align-items: center;
-        
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 0;
+        gap: 15px
+    }
+
+    .container img {
+        width: 55px;
+        height: 50px;
+        padding-left: 0
     }
 
     .buttonResponsive {
@@ -171,12 +178,24 @@
         color: white;
         background: none;
         border: none;
-        font-size: 50px
+        font-size: 35px;
+        padding: 0;
+        margin: 0
+    }
+
+    .user i {
+        padding: 0;
+        margin: 0
+    }
+
+    .userOptions {
+        top: 60%;
+        right: 10%; 
     }
 
     .buttonResponsive:focus:not(:focus-visible) {
         background: none;
-        border: none
+        border: none;
     }
 
     .allContainer {
@@ -187,22 +206,26 @@
         height: 100%;
         width: 100%;
         z-index: 2;
-        align-items: center;
         left: 100%;
-        top: 119.1px;
+        top: 60px;
         transition: left 0.5s ease;
-        padding-top: 20px;
         padding-bottom: 20px;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 35px
     }
 
    .filters {
+        display:flex;
         flex-direction: column;
-        width: 60%;
+        width: 80%;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        gap: 20px
     }
    .filter {
-        width: 100%
+        width: 80%
    }
   .order{
         flex-direction: column;

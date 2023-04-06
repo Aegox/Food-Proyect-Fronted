@@ -77,11 +77,11 @@
 
 @media screen and (max-width: 1280px) { 
     .imageText {
-        width: 80%;
+        width: 100%;
         font-size: 18px;
         margin: 0;
-        top: 320px;
-        left: 30px;
+        top: 40%;
+        left: 0%
     }
 
     .slider img {

@@ -78,7 +78,6 @@ const validateEmail = () => {
     }
   };
 
-    console.log(errors, user, repeatPassword)
     
 
     return (

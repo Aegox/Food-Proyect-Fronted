@@ -28,7 +28,7 @@ const Recipes = ({recipes}) => {
     return (
         <div className={styleRecipes.container}>
             <Paginated recipes = {recipes.length} recipesPage = {recipesPage} setPages = {setPages}/>
-            {loading ? <ReactLoading className={styleRecipes.loading} type={'spokes'} color={'#1d8845'} width={'3%'} height={'3%'}/> : recipesPerPage.map((recipe) => {
+            {loading ? <ReactLoading className={styleRecipes.loading} type={'spokes'} color={'#1d8845'} /> : recipesPerPage.map((recipe) => {
                 return (
                     <div>
                         <Recipe

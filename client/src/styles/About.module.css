@@ -62,3 +62,37 @@
 .Description h2{
     font-size: 40px
 }
+
+@media screen and (max-width: 1280px) {
+    .secondContainer {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: none;
+        margin: 0
+    }
+
+    .secondContainer img {
+        width: 300px
+    }
+
+    .Description {
+        width: 90%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-left: 5%;
+        margin: 0
+   }
+    
+    .Description h2{
+        width: 90%;
+        height: 100%;
+        font-size: 35px;
+        padding-left: 5%;
+        
+    }
+}
+
+ 

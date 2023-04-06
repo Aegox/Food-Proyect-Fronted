@@ -10,7 +10,6 @@ const Recipe = (props) =>  {
        await dispatch(actions.addSavedRecipe(localStorage.getItem('token'), props)) 
     }
 
-    console.log(window.location.pathname)
 
     return (
         <div>
