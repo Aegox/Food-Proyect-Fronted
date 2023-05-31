@@ -13,7 +13,7 @@
 .slider ul {
     display: flex;
     animation: change 20s infinite alternate linear;
-    width: 600%
+    width: 400%
 }
 
 .slider li {

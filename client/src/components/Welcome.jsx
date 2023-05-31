@@ -20,12 +20,6 @@ export default function Welcome() {
                     <li>
                         <img src="./images/3.jpg" alt=""/>
                     </li>
-                    <li>
-                        <img src="./images/4.jpg" alt=""/>
-                    </li>
-                    <li>
-                        <img src="./images/5.jpg" alt=""/>
-                    </li>
                 </ul>
 
             </div>
